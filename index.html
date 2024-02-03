@@ -1,11 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML-CSS Template</title>
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body></body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML-CSS Template</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <form>
+    
+    <section>
+      <h1>Contact information</h1>
+
+      <p>
+        888-555-5555<br>
+        <a href="mailto:yourfirstname@yourlastname.com">Jordan@Black.com</a>
+      </p>
+      
+
+      <fieldset>
+        <legend>Favorite Genres</legend>
+        <ul>
+          <li>
+            <label for="Favorite Genres_1">
+              <input type="radio" id="Favorite Genres_1" name="title" value="A" />
+              Action
+            </label>
+          </li>
+          <li>
+            <label for="Favorite Genres_2">
+              <input type="radio" id="Favorite Genres_2" name="title" value="K" />
+              Adventure
+            </label>
+          </li>
+          <li>
+            <label for="Favorite Genres_3">
+              <input type="radio" id="Favorite Genres_3" name="title" value="Q" />
+              Romance
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <p>
+        <label for="name">
+          <span>Name: </span>
+          <strong><span aria-label="required">*</span></strong>
+        </label>
+        <input type="text" id="name" name="username" required />
+      </p>
+      <p>
+        <label for="mail">
+          <span>Email: </span>
+          <strong><span aria-label="required">*</span></strong>
+        </label>
+        <input type="email" id="mail" name="usermail" required />
+      </p>
+      <p>
+        <label for="pwd">
+          <span>Password: </span>
+          <strong><span aria-label="required">*</span></strong>
+        </label>
+        <input type="password" id="pwd" name="password" required />
+      </p>
+    </section>
+    
+    <section>
+      <h2>Payment information</h2>
+      <p>
+        <label for="card">
+          <span>Card type:</span>
+        </label>
+        <select id="card" name="usercard">
+          <option value="visa">Visa</option>
+          <option value="mc">Mastercard</option>
+          <option value="amex">American Express</option>
+        </select>
+      </p>
+      <p>
+        <label for="number">
+          <span>Card number:</span>
+          <strong><span aria-label="required">*</span></strong>
+        </label>
+        <input type="tel" id="number" name="cardnumber" required />
+      </p>
+      <p>
+        <label for="expiration">
+          <span>Expiration date:</span>
+          <strong><span aria-label="required">*</span></strong>
+        </label>
+        <input
+          type="text"
+          id="expiration"
+          name="expiration"
+          required
+          placeholder="MM/YY"
+          pattern="^(0[1-9]|1[0-2])\/([0-9]{2})$" />
+      </p>
+    </section>
+    
+    <section>
+      <p>
+        <button type="submit">Validate the payment</button>
+      </p>
+    </section>
+    
+    </form>
+    
+</body>
+<h2>Who Am I</h2>
+
+<div class="output" style="min-height: 50px;"></div>
+
+<p class="a11y-label">
+  Press Esc to move focus away from the code area (Tab inserts a tab character).
+</p>
+
+<textarea id="code" class="input" style="min-height: 100px; width: 95%">
+My name is Jordan. I live in O'Fallon IL and I go to SWIC for IT. In my free time, I like to play video games and go to the gym.
+</textarea>
+
+<div class="playable-buttons">
+  <input id="solution" type="button" value="Submit" />
+</div>
+
 </html>
