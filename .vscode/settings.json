@@ -6,6 +6,6 @@
   "editor.bracketPairColorization.enabled": true,
   "editor.formatOnSave": true,
   "editor.wordWrap": "wordWrapColumn",
-  "files.autoSave": "onFocusChange",
+  "files.autoSave": "off",
   "files.eol": "\n"
 }
