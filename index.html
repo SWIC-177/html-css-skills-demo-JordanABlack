@@ -22,27 +22,7 @@
       
 
       <fieldset>
-        <legend class="text-lg text-blue-500"> Favorite Genres</legend>
-        <ul>
-          <li>
-            <label for="Favorite Genres_1">
-              <input type="radio" id="Favorite Genres_1" name="title" value="A" />
-              Action
-            </label>
-          </li>
-          <li>
-            <label for="Favorite Genres_2">
-              <input type="radio" id="Favorite Genres_2" name="title" value="K" />
-              Adventure
-            </label>
-          </li>
-          <li>
-            <label for="Favorite Genres_3">
-              <input type="radio" id="Favorite Genres_3" name="title" value="Q" />
-              Romance
-            </label>
-          </li>
-        </ul>
+        <legend class="text-lg text-blue-500"> Payment Methods</legend>
       </fieldset>
       <p>
         <label for="name">
@@ -53,17 +33,17 @@
       </p>
       <p>
         <label for="mail">
-          <span>Email: </span>
+          <span class="text-lg text-purple-500">Email: </span>
           <strong><span aria-label="required">*</span></strong>
         </label>
         <input type="email" id="mail" name="usermail" required />
       </p>
       <p>
         <label for="pwd">
-          <span  class="text-lg text-orange-500">Password: </span>
+          <span  class="text-lg text-purple-500">Password: </span>
           <strong><span aria-label="required">*</span></strong>
         </label>
-        <input type="password" id="pwd" name="password" required />
+        <input type="password" id="pwd" name="userpwd" required />
       </p>
     </section>
     
@@ -103,28 +83,11 @@
     
     <section>
       <p>
-        <button type="submit" class="h-12 w-32 bg-blue-500 hover: bg-blue-800 text-white rounded-2x1"
-        disabled>Validate the payment</button>
+        <button type="submit" class="h-12 w-32 bg-blue-500 hover: bg-blue-800 text-white rounded-2x1">Validate the payment</button>
       </p>
     </section>
     
     </form>
-    
+    <script src="./main.js" type="module"></script>
 </body>
-<h2  class="text-lg text-pink-500">Who Am I</h2>
-
-<div></div>
-
-<p>
-  Press Esc to move focus away from the code area (Tab inserts a tab character).
-</p>
-
-<textarea  class="text-lg text-blue-500">
-My name is Jordan. I live in O'Fallon IL and I go to SWIC for IT. In my free time, I like to play video games and go to the gym.
-</textarea>
-
-<div>
-  <input/>
-</div>
-
 </html>
